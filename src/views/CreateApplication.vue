@@ -47,6 +47,9 @@
         <div class="create-application__item">
           <CustomSelect title="Оффер" placeholder="Выберите оффер" :sublistItems="offers" arrow />
         </div>
+        <div class="create-application__item">
+          <CustomSelect title="Статус пользователя" placeholder="Выберите статус пользователя" :sublistItems="offers" arrow />
+        </div>
       </div>
     </div>
     <div class="create-application__buttons">
