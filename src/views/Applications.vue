@@ -5,10 +5,10 @@
         <SvgIcon class="applications__icon" name="form" />
         <div class="applications__link-text">Заявки</div>
       </router-link>
-      <router-link class="applications__link" to="/referrals">
+      <!--<router-link class="applications__link" to="/referrals">
         <SvgIcon class="applications__icon" name="services" />
         <div class="applications__link-text">Реф.Ссылки</div>
-      </router-link>
+      </router-link>-->
       <Button class="applications__button" icon="export" yellow>Экспорт</Button>
       <Button class="applications__button" icon="plus" to="/applications/create" purple> Создать заявку </Button>
     </div>
@@ -66,7 +66,17 @@
             <td>(1) Локо Банк RKO</td>
             <td>Отправлен</td>
             <td>-</td>
-            <td>4000</td>
+            <td>4000
+
+              <div class="new">
+                <SvgIcon class="new__icon" name="new" />
+                <div class="new__prompt">
+
+                  <a href="#">Ссылка:</a>
+                  Примечание: описание примечания.
+                </div>
+              </div>
+            </td>
           </tr>
           <tr>
             <td>2023-07-09</td>

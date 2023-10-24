@@ -5,10 +5,10 @@
         <SvgIcon class="referrals__icon" name="form" />
         <div class="referrals__link-text">Заявки</div>
       </router-link>
-      <router-link class="referrals__link" to="/referrals">
+      <!--<router-link class="referrals__link" to="/referrals">
         <SvgIcon class="referrals__icon" name="services" />
         <div class="referrals__link-text">Реф.Ссылки</div>
-      </router-link>
+      </router-link>-->
       <Button class="referrals__button" icon="export" yellow>Экспорт</Button>
       <Button class="referrals__button" icon="plus" to="/applications/create" purple>Создать заявку</Button>
     </div>

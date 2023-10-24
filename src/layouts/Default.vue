@@ -21,16 +21,17 @@
     @media (min-width: 1025px) {
       display: flex;
     }
+    @media (max-width: 600px) {
+      padding-bottom: 4.0625rem;
+    }
   }
   .inner {
     flex: 1;
     padding: 1rem 2rem;
     overflow: auto;
+    min-height: 100vh;
     @media (max-width: 1366px) {
       padding: 1rem;
-    }
-    @media (max-width: 768px) {
-      min-height: 100vh;
     }
   }
   .top-info {

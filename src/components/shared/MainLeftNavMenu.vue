@@ -1,5 +1,6 @@
 <template>
   <div class="nav-menu" :class="{ 'nav-menu_open': openMenu }">
+    <div class="nav-menu__overlay" @click="closeMenu"></div>
     <div class="nav-menu__box">
       <div class="nav-menu__wrap">
         <div class="nav-menu__logo">
@@ -85,7 +86,7 @@
   import { ref } from "vue";
   import SvgIcon from "./SvgIcon.vue";
 
-  const subBalance = ref(true);
+  const subBalance = ref(false);
   const openMenu = ref(false);
 
   const data = { number: "0000", pos: "Веб-Мастер", name: "Степанов Олег Александрович" };

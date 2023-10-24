@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-select" :class="{ 'custom-select_open': showSubmenu && arrow }">
+  <div class="custom-select" :class="{ 'custom-select_open': showSubmenu && arrow }" @click.self="log">
     <div class="custom-select__title">{{ title }}</div>
     <button class="custom-select__button" :class="{ 'custom-select__button_small': icon }" @click="toggleSubmenu">
       {{ placeholder }}
@@ -36,6 +36,10 @@
     sublistItems: Array,
     arrow: Boolean,
   });
+
+  function log() {
+    console.log(321);
+  }
 
   function toggleSubmenu() {
     showSubmenu.value = !showSubmenu.value;

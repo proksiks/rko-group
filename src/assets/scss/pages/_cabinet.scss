@@ -30,8 +30,13 @@
   &__img {
     display: block;
     border-radius: 100%;
-    max-width: 12.5rem;
-    width: 100%;
+    width: 12.5rem;
+    height: 12.5rem;
+
+    @media (max-width: 600px) {
+      width: 9rem;
+      height: 9rem;
+    }
   }
 
   // .cabinet__upload
@@ -121,6 +126,9 @@
     padding-bottom: 0.625rem;
     margin-bottom: 1rem;
     border-bottom: var(--1px) solid var(--gray);
+    @media (max-width: 600px) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   // .cabinet__input
