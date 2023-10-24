@@ -177,6 +177,9 @@
     width: 100%;
     border-collapse: collapse;
     font-size: var(--small-text-size);
+    td,th {
+      white-space: nowrap;
+    }
     thead {
       th {
         text-align: left;
