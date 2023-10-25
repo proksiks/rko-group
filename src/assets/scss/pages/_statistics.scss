@@ -1,18 +1,24 @@
 .statistics {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  @media (max-width: 1440px) {
-    gap: 1rem;
-  }
-  @media (max-width: 1280px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (max-width: 1024px) {
-    grid-template-columns: 1fr;
-  }
-  @media (max-width: 480px) {
-    display: block;
+  // .statistics__wrapper
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    @media (max-width: 1440px) {
+      gap: 1rem;
+    }
+    @media (max-width: 1280px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 40px;
+      display: block;
+    }
   }
 
   // .statistics__boxes
@@ -67,6 +73,18 @@
   &__title {
     font-size: 1.25rem;
     font-weight: 600;
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+
+  // .statistics__sub-title
+
+  &__sub-title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
     @media (max-width: 480px) {
       font-size: 1rem;
     }
@@ -191,6 +209,134 @@
 
   &__auto-scroll {
     overflow: auto;
+  }
+
+  // .statistics__inputs
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem;
+    max-width: 87.5rem;
+    @media (max-width: 1440px) {
+      gap: 1rem;
+    }
+    @media (max-width: 1280px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .statistics__apply
+
+  &__apply {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-column-start: 3;
+
+    // .statistics__apply-button
+    &-button {
+      padding: 0.675rem 5rem;
+      @media (max-width: 480px) {
+        padding: 0.675rem 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  // .statistics__info
+
+  &__info {
+    background-color: var(--white);
+    border-radius: var(--default-radius);
+    margin-top: 3rem;
+    overflow-y: visible;
+    overflow-x: auto;
+    padding: 2rem 3rem;
+
+    @media (max-width: 1440px) {
+      padding: 1rem 1.5rem 1rem 1rem;
+    }
+    @media (max-width: 768px) {
+      margin-top: 2rem;
+    }
+  }
+
+  // .statistics__info-table
+
+  &__info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--small-text-size);
+    thead {
+      th {
+        text-align: left;
+        border: var(--1px) solid var(--gray);
+        padding: 0.675rem;
+
+        font-weight: 600;
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: var(--1px) solid var(--gray);
+      }
+      td {
+        position: relative;
+        padding: 1rem 0.675rem;
+        font-weight: 500;
+
+        .new {
+          position: absolute;
+          right: -1rem;
+          top: 50%;
+          z-index: 1;
+          transform: translateY(-50%);
+          &:hover {
+            .new__prompt {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          &__icon {
+            display: block;
+          }
+          &__prompt {
+            color: #34486c;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            width: 23rem;
+            font-size: 0.75rem;
+            box-shadow: 0 0.3125rem 1.25rem 0 #0000000d;
+            border-radius: 1rem 0 1rem 1rem;
+            background-color: white;
+            padding: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(-4%, -20%);
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            margin-right: -0.1rem;
+            a {
+              color: inherit;
+              display: block;
+              font-size: 1rem;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    td {
+      @media (max-width: 1024px) {
+        white-space: nowrap;
+      }
+    }
   }
 }
 
