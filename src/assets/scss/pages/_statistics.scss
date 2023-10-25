@@ -236,7 +236,11 @@
     justify-content: flex-end;
     align-items: flex-end;
     grid-column-start: 3;
-
+    
+    @media (max-width: 768px) {
+      grid-column-start: 1;
+    }
+    
     // .statistics__apply-button
     &-button {
       padding: 0.675rem 5rem;
