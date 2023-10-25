@@ -108,23 +108,27 @@
 
   const status = [
     {
-      title: "Статус 1 (Инфо)",
+      title: "Ошибка",
       value: "status-1",
     },
     {
-      title: "Статус 2 (Инфо)",
+      title: "Новый",
       value: "status-2",
     },
     {
-      title: "Статус 3 (Инфо)",
+      title: "Отправлен",
       value: "status-3",
     },
     {
-      title: "Статус 4 (Инфо)",
+      title: "Холд",
       value: "status-4",
     },
     {
-      title: "Статус 5 (Инфо)",
+      title: "Принято",
+      value: "status-5",
+    },
+    {
+      title: "Отменена",
       value: "status-5",
     },
   ];

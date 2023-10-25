@@ -196,6 +196,59 @@
   import { reactive, ref } from "@vue/reactivity";
   const options = reactive(["за сегодня", "за неделю", "за месяц", "за год"]);
 
+  const status = [
+    {
+      title: "Ошибка",
+      value: "status-1",
+    },
+    {
+      title: "Новый",
+      value: "status-2",
+    },
+    {
+      title: "Отправлен",
+      value: "status-3",
+    },
+    {
+      title: "Холд",
+      value: "status-4",
+    },
+    {
+      title: "Принято",
+      value: "status-5",
+    },
+    {
+      title: "Отменена",
+      value: "status-5",
+    },
+  ];
+  const offers = [
+    {
+      title: "(3) Локо Банк РКО",
+      value: "offer-1",
+    },
+    {
+      title: "(12) Касса Тинькофф",
+      value: "offer-2",
+    },
+    {
+      title: "(10) Тинькофф - Кредит для Бизнеса",
+      value: "offer-3",
+    },
+    {
+      title: "(3) Локо Банк РКО",
+      value: "offer-1",
+    },
+    {
+      title: "(12) Касса Тинькофф",
+      value: "offer-2",
+    },
+    {
+      title: "(10) Тинькофф - Кредит для Бизнеса",
+      value: "offer-3",
+    },
+  ];
+
   const balance = ref("за сегодня");
   const income = ref("за сегодня");
 </script>
