@@ -225,7 +225,7 @@
             display: block;
           }
           &__prompt {
-            color: #34486c;
+            color: var(--main-blue-color);
             position: absolute;
             right: 0;
             z-index: 1;

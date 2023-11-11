@@ -14,6 +14,36 @@
           <OffevSmallArticle :offer="offer" />
         </li>
       </ul>
+
+      <nav class="offers__pagination">
+        <ul class="offers__pagination-list">
+          <li class="offers__pagination-item">
+            <router-link class="offers__pagination-link"  to="#">
+              <SvgIcon class="offers__pagination-icon" name="left" />
+            </router-link>
+          </li>
+          <li class="offers__pagination-item">
+            <span class="offers__pagination-link offers__pagination-link_active"> 1 </span>
+          </li>
+          <li class="offers__pagination-item"><router-link class="offers__pagination-link" to="#"> 2 </router-link></li>
+          <li class="offers__pagination-item"><router-link class="offers__pagination-link" to="#"> 3 </router-link></li>
+          <li class="offers__pagination-item offers__pagination-item_desctop"><router-link class="offers__pagination-link" to="#"> 4 </router-link></li>
+          <li class="offers__pagination-item offers__pagination-item_desctop"><router-link class="offers__pagination-link" to="#"> 5 </router-link></li>
+          <li class="offers__pagination-item">
+            <SvgIcon class="offers__pagination-icon" name="more" />
+          </li>
+          <li class="offers__pagination-item">
+            <router-link class="offers__pagination-link" to="#"> 10 </router-link>
+          </li>
+          <li class="offers__pagination-item">
+            <router-link class="offers__pagination-link" to="#"> 20 </router-link>
+          </li>
+
+          <router-link class="offers__pagination-link" to="#">
+            <SvgIcon class="offers__pagination-icon" name="right" />
+          </router-link>
+        </ul>
+      </nav>
     </div>
   </div>
 </template>
